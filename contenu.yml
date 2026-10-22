@@ -1,0 +1,196 @@
+# ============================================================
+#  CONTENU DU SITE VYTAL
+#  C'est le SEUL fichier à modifier pour mettre le site à jour.
+#
+#  Règles simples :
+#  - Les lignes qui commencent par # sont des commentaires (ignorées).
+#  - Respecte les espaces en début de ligne (l'indentation), jamais de tabulation.
+#  - Mets les textes entre guillemets "comme ceci" s'ils contiennent : ou #
+#  - Un champ vide ("") fait disparaître l'élément du site.
+# ============================================================
+
+site:
+  marque: "VYTAL"
+  nom: "Vincent Dalgier Delmas"
+  statut: "Freelance"
+  ville: "Toulouse, France"
+  accroche: "Du son à l'image"
+
+
+# ---------- HAUT DU SITE ----------
+accueil:
+  intro: "Sound design, prise de son, mixage, montage et cadrage. J'accompagne vos projets audiovisuels de la captation à la livraison."
+  bouton: "Voir mes projets"
+
+
+# ---------- SECTION QUI SUIS-JE ----------
+a_propos:
+  photo: "images/portrait.jpg"
+  # Laisse une ligne vide entre deux paragraphes.
+  texte: |
+    Du son à l'image, je travaille sur différentes étapes de la production audiovisuelle.
+
+    Du sound design à la prise de son, au mixage, au montage vidéo et à la captation.
+  logiciels:
+    - "Premiere Pro"
+    - "DaVinci Resolve"
+    - "Pro Tools"
+    - "Photoshop"
+    - "FL Studio"
+  services:
+    - "Sound design"
+    - "Création musicale"
+    - "Mixage son"
+    - "Prise de son"
+    - "Montage"
+    - "Cadrage"
+
+
+# ---------- SECTION CONTACT ----------
+contact:
+  email: "vincent.dalgierdelmas@gmail.com"
+  telephone: ""                     # ex : "06 00 00 00 00" (vide = non affiché)
+  instagram_pseudo: "@vytal_"
+  instagram_lien: "https://www.instagram.com/vytal_/"
+  linkedin_nom: "Vincent Dalgier Delmas"
+  linkedin_lien: "https://www.linkedin.com/in/vincent-dalgier-delmas-6760a3229/"
+  formulaire: true                  # false pour masquer le formulaire
+
+
+# ============================================================
+#  PROJETS
+#  Chaque catégorie = une section du site (et un lien dans le menu).
+#  Une catégorie sans projet n'apparaît pas sur le site.
+#
+#  Pour AJOUTER UN PROJET : copie un bloc qui commence par "- titre:"
+#  et colle-le juste en dessous, au même niveau d'espaces.
+#
+#  Champs d'un projet :
+#    titre   : nom du projet
+#    client  : client ou contexte
+#    roles   : ce que tu as fait, entre crochets, séparé par des virgules
+#    lien    : lien YouTube ou Instagram (vide = carte non cliquable)
+#    image   : chemin vers une image dans le dossier images/projets/
+#              (vide + lien YouTube = miniature YouTube automatique)
+#
+#  Le premier projet de la liste s'affiche en premier.
+# ============================================================
+
+categories:
+
+  - id: "realisations"
+    titre: "Réalisations"
+    description: "Les projets que j'ai réalisés de A à Z."
+    projets: []
+    # Pour remplir cette section, remplace "[]" ci-dessus par des projets, par exemple :
+    # projets:
+    #   - titre: "Mon court-métrage"
+    #     client: "Projet personnel"
+    #     roles: [Réalisation, Montage, Sound design]
+    #     lien: "https://www.youtube.com/watch?v=XXXXXXXX"
+    #     image: ""
+
+  - id: "son"
+    titre: "Son"
+    description: "Prise son, mix, master, sound design et composition musicale."
+    projets:
+      - titre: "Reveal Partenaires"
+        client: "TBC (Toulouse Basket Club)"
+        roles: [Prise son, Mixage des voix]
+        lien: "https://www.youtube.com/watch?v=ZUjsrxzA-yU"
+        image: "images/projets/tbc-reveal.jpg"
+
+      - titre: "Capsule vidéo"
+        client: "Solvéo x Stade Toulousain"
+        roles: [Prise son, Mixage des voix]
+        lien: "https://www.youtube.com/watch?v=xDtUcxmhdKg"
+        image: "images/projets/solveo-stade-toulousain.jpg"
+
+      # En cours de montage : retire les # des 5 lignes ci-dessous quand la vidéo est en ligne
+      # - titre: "Capsule vidéo"
+      #   client: "Mobilypass x Stade Toulousain"
+      #   roles: [Prise son, Mixage et Master, Sound Design]
+      #   lien: ""
+      #   image: ""
+
+      - titre: "Spec PUB"
+        client: "Mercedes AMG-GT"
+        roles: [Prise son, Mixage et Master, Sound Design]
+        lien: "https://www.youtube.com/watch?v=Gw8ePPjtXaE"
+        image: "images/projets/mercedes-amg-gt.jpg"
+
+      - titre: "Nouvelle DA"
+        client: "NWZ Studios"
+        roles: [Sound Design, Mixage et Master, Composition Musicale, Co-écriture]
+        lien: "https://www.youtube.com/watch?v=z1vDELgoGIU"
+        image: "images/projets/nwz-nouvelle-da.jpg"
+
+      - titre: "Showreel 2026"
+        client: "NWZ Studios"
+        roles: [Sound Design, Mixage et Master]
+        lien: "https://youtu.be/h7IetVgo1jI"
+        image: "images/projets/nwz-showreel-2026.jpg"
+
+      - titre: "Aftermovie"
+        client: "Rose Festival 2025"
+        roles: [Sound Design, Mixage et Master]
+        lien: "https://www.youtube.com/watch?v=6k4E-XrdtXk"
+        image: "images/projets/rose-festival-2025.jpg"
+
+      - titre: "PUB"
+        client: "Créasila"
+        roles: [Sound Design, Mixage et Master, Composition Musicale]
+        lien: "https://www.youtube.com/watch?v=rPYEghf6EN4"
+        image: "images/projets/creasila-pub.jpg"
+
+  - id: "image"
+    titre: "Image"
+    description: "Montage, cadrage, motion design et DA."
+    projets:
+      - titre: "Réels Instagram"
+        client: "Sport Automobile"
+        roles: [Montage, Second Cadreur]
+        lien: "https://www.instagram.com/p/DeMuv0Dvw-H/"
+        image: "images/projets/sport-auto-1.jpg"
+
+      - titre: "Réels Instagram"
+        client: "Sport Automobile"
+        roles: [Montage, Second Cadreur]
+        lien: "https://youtu.be/blMiEqN6EpQ"
+        image: "images/projets/sport-auto-2.jpg"
+
+      - titre: "Réels Instagram"
+        client: "Média Day"
+        roles: [Montage, Second Cadreur]
+        lien: "https://www.instagram.com/p/DeBySgTvaeY/"
+        image: "images/projets/media-day-1.jpg"
+
+      - titre: "Réels Instagram"
+        client: "Média Day"
+        roles: [Montage, Second Cadreur]
+        lien: "https://youtube.com/shorts/jQ4Mh78ACO0"
+        image: "images/projets/media-day-2.jpg"
+
+      - titre: "Vidéo YouTube"
+        client: "DelayFish - MultiKit"
+        roles: [Montage, Motion Design, DA]
+        lien: "https://www.youtube.com/watch?v=2uXi5mOhrJs"
+        image: "images/projets/delayfish-multikit.jpg"
+
+      - titre: "Vidéo YouTube"
+        client: "DelayFish - Deconstructed"
+        roles: [Montage, Motion Design, DA]
+        lien: "https://www.youtube.com/watch?v=-bFasavozm0"
+        image: "images/projets/delayfish-deconstructed.jpg"
+
+      - titre: "Vidéo YouTube"
+        client: "DelayFish - Tuto Soul"
+        roles: [Montage, Motion Design, DA]
+        lien: "https://www.youtube.com/watch?v=44LdJBoIZ94"
+        image: "images/projets/delayfish-tuto-soul.jpg"
+
+      - titre: "Vidéo YouTube"
+        client: "DelayFish - Tuto Travis Scott"
+        roles: [Montage, Motion Design, DA]
+        lien: "https://www.youtube.com/watch?v=6bRGHKrO4_M"
+        image: "images/projets/delayfish-tuto-travis-scott.jpg"
